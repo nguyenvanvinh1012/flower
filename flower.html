@@ -9,6 +9,9 @@
     <title>flowers</title>
 </head>
 <body class="container">
+    <audio id="birthdayMusic"
+        src="https://jennierubyjanenini.github.io/Music-K-Files/happy%20birthday%20to%20you%20female%20voice%20wishes.mp3">
+    </audio>
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
     <div class="night"></div>
     <div class="flowers">
@@ -308,5 +311,20 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const music = document.getElementById('birthdayMusic');
+        const playPromise = music.play();
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                // Autoplay started
+            }).catch(error => {
+                // Autoplay was prevented.
+                console.log("Autoplay failed:", error);
+            });
+        }
+    });
+</script>
+
   </body>
 </html>
