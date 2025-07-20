@@ -1,7 +1,7 @@
-onload = () =>{
-        document.body.classList.remove("container");
-};
+// onload = () =>{
+//         document.body.classList.remove("container");
+// };
 
-function SetDate() {
-    document.getElementById("Tanav").play();
-}
+// function SetDate() {
+//     document.getElementById("Tanav").play();
+// }
